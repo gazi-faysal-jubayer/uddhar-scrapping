@@ -16,7 +16,7 @@ try:
     wait = WebDriverWait(driver, 10)
     wait.until(EC.presence_of_element_located((By.XPATH, "//tbody")))
 
-    csv_file = "privet hospital 3/privet-hospital-3-output.csv"
+    csv_file = "private hospital 3/private-hospital-3-output.csv"
     with open(csv_file, mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         writer.writerow(["Hospital Name", "Address", "Contact"]) 
